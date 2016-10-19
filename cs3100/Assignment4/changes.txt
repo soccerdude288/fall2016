@@ -1,0 +1,7 @@
+syscall.c - lines 89 - 92, 122-125
+sysproc.c - lines 45+
+proc.h - line 18
+main.c - line 20
+usys.S - end of file
+
+//look at kill (user.h), mkdir(user.h), and use argint to interact with the trap frame.

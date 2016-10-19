@@ -1,0 +1,17 @@
+#!/bin/bash
+
+eqVar=0;
+while [ "$eqVar" == "0" ]; do
+	echo -n "Enter an expression : "
+	read var1 expression var2
+
+	if [ "$var1" == "Exit" ]
+	then
+		eqVar=5
+		continue
+	fi
+
+	echo "$var1 $expression $var2 = " `expr $var1 $expression $var2`
+
+done
+exit 1

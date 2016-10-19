@@ -1,0 +1,51 @@
+#!/bin/bash
+
+# quietly delete my.db if it exists
+rm -f my.db
+
+# echo commands as they are executed
+
+echo "./sql"
+./sql
+echo "------------------"
+echo "./sql -c"
+./sql -c
+echo "------------------"
+echo "./sql -c my.db"
+./sql -c my.db
+echo "------------------"
+echo "./sql -a my.db Fred Father"
+./sql -a my.db Fred Father
+echo "------------------"
+echo "./sql -a my.db Wilma Mother"
+./sql -a my.db Wilma Mother
+echo "------------------"
+echo "./sql -g my.db Fred"
+./sql -g my.db Fred
+echo "------------------"
+echo "./sql -a my.db Bambam Son"
+./sql -a my.db Bambam Son
+echo "------------------"
+echo "./sql -a my.db Pebbles Daughter"
+./sql -a my.db Pebbles Daughter
+echo "------------------"
+echo "./sql -a my.db Dino Pet"
+./sql -a my.db Dino Pet
+echo "------------------"
+echo "./sql -a my.db Barney Neighbor"
+./sql -a my.db Barney Neighbor
+echo "------------------"
+echo "./sql -l my.db "
+./sql -l my.db
+echo "------------------"
+echo "./sql -d my.db Barney"
+./sql -d my.db Barney
+echo "------------------"
+echo "./sql -l my.db "
+./sql -l my.db
+echo "------------------"
+echo "./sql -a my.db Barney Nuisance"
+./sql -a my.db Barney Nuisance
+echo "------------------"
+echo "./sql -l my.db "
+./sql -l my.db

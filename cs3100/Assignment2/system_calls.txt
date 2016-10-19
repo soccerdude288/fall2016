@@ -1,0 +1,13 @@
+Taylor Earl
+
+Purpose of System Calls:
+	A system call is used to create a process that is done by the Kernal.
+
+Data Structure with System Calls:
+	System calls are put in a stack along with the parameters that are passed when it is called.
+
+What Files are associated with System Calls:
+	zombie.c, sysproc.c, forktest.c, getcount.c, stressfs.c, init.c, sh.c, kill.c, mkdir.c, bigtest.c, wc.c, rm.c, ls.c, trap.c, grep.c, ln.c, cat.c, echo.c, pipe.c, console.c
+	
+How to create a system call:
+	System calls are found in the sysfile.c document. When adding a new one, this document will need to be modified with the code that needs to be added. 

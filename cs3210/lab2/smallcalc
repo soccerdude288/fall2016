@@ -1,0 +1,18 @@
+#!/bin/bash
+
+eqVar=0;
+while [ "$eqVar" == "0" ]; do
+	
+	echo -n "Enter an expression: "
+	read testVar
+
+	if [ "$testVar" == "Exit" ] || [ "$testVar" == "exit" ]
+	then
+		eqVar=5
+		continue
+	fi
+
+	echo "Answer:" $(($testVar))
+
+done
+exit 0

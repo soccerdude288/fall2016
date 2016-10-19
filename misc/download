@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#get username and password
+USER=pi                   #Your username
+PASS=Cocobine1                   #Your password
+HOST="taylorearl.com"          #Keep just the address
+LCD="~/Desktop/FALL2016"     #Your local directory
+RCD="/home/pi"               #FTP server directory
+
+lftp -f "
+open $HOST
+user $USER $PASS
+lcd $LCD
+mirror --continue --delete --verbose $RCD $LCD
+bye
+" 

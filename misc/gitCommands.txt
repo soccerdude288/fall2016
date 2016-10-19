@@ -1,0 +1,11 @@
+Make a change
+git add pathToFile
+
+git commit -m "comment"
+
+git push origin master
+
+
+
+pull
+git pull origin master

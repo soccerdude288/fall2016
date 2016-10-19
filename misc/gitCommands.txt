@@ -9,3 +9,8 @@ git push origin master
 
 pull
 git pull origin master
+
+Remove something from the repo
+git rm file
+git rm -r directory
+
